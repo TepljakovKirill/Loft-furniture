@@ -53,3 +53,37 @@
       }
     }
   }
+
+  .header-logo__block {
+    margin: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+      height: 50px;
+      width: 839px;
+      border: 1px solid #E6E6E6;
+    }
+
+    .input {
+      padding-left: 38px;
+      color: #414141;
+      background-image: url("../../../public/img/search-icon.svg");
+      background-position: 10px 17px;
+      background-repeat: no-repeat;
+    }
+
+    .header-icon__block a:not(:first-child) {
+      margin-left: 30px;
+    }
+
+    svg:hover {
+      path  {
+        stroke:#ec101b;
+        transition: ease-in 0.1s;
+      }
+  
+    }
+    
+
+  }

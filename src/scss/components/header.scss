@@ -84,6 +84,63 @@
       }
   
     }
-    
-
+  
   }
+
+  .header-menu {
+    
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+  }
+
+  .menu {
+    margin-right: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .link-block {
+      height: 47px;
+      padding: 0 26px;
+      align-items: center;
+      transition: ease-in 0.3s;
+     
+      p {
+        margin-left: 10px;
+        font-size: 16px;
+        color: #000;
+      }
+
+      .red {
+        color: #ec101b;
+      }
+     
+      &:hover {
+        background-color: #245462;
+        transition: ease-in 0.3s;
+
+        path  {
+          fill:#fff;
+          transition: ease-in 0.3s;
+        }
+    
+        p {
+          color: #fff;
+          transition: ease-in 0.3s;
+        }
+      }
+    }
+   
+  }
+
+  // .link-block p:last-child {
+  //   color:#ec101b;
+  // }

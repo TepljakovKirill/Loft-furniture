@@ -1,0 +1,35 @@
+.slick-prev, .slick-next {
+    font-size: 0px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    z-index: 100;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev {
+    left: 25px;
+}
+
+.slick-next:before {
+    content: url(../img/arrow-right.png);
+}
+
+.slick-prev:before {
+    content: url(../img/arrow-left.png);
+}
+
+.slick-next:hover:before {
+    background-color: #D2D2D2;
+    content: url(../img/arrow-right-hover.png);
+}
+
+.slick-prev:hover:before {
+    background-color: #D2D2D2;
+    content: url(../img/arrow-left-hover.png);
+}
+
+

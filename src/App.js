@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "./components/Header/header";
+import Header from "./components/Header";
+import Slider from "./components/Slider";
 import "./scss/app.scss";
 
 function App() {
@@ -8,6 +9,9 @@ function App() {
       <header>
         <Header />
       </header>
+      <main>
+        <Slider />
+      </main>
     </div>
   );
 }

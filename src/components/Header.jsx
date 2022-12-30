@@ -1,4 +1,6 @@
 import React from "react";
+import Logo from "../img/logo.svg";
+import Etc from "../img/etc.png";
 
 function Header() {
   return (
@@ -77,7 +79,7 @@ function Header() {
       <div className="container">
         <div className="header-logo__block flex">
           <a href="#">
-            <img src="img/logo.svg" alt="Логотип" />
+            <img src={Logo} alt="Логотип" />
           </a>
           <input className="input" type="text" placeholder="Поиск" />
           <div className="header-icon__block">
@@ -316,7 +318,7 @@ function Header() {
             </li>
           </nav>
           <button>
-            <img src="img/etc.png" alt="Кнопка меню" />
+            <img src={Etc} alt="Кнопка меню" />
           </button>
         </div>
       </div>

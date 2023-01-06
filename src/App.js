@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
+import Promotion from "./components/Promotion";
 import "./scss/app.scss";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       </header>
       <main>
         <Slider />
+        <Promotion />
       </main>
     </div>
   );

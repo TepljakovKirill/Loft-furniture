@@ -47,24 +47,26 @@ function BunnerSlider() {
   };
   return (
     <div className="container">
-      <Slider {...settings}>
-        <div className="bunner">
-          <img className="bunnerImg" src={Bunner1} alt="cart" />
-          <div className="bunner-content">
-            <p className="bunner-title">Loft мебель</p>
-            <div className="bunner-descr">
-              Современная и удобная мебель в Анапе
+      <div className="wrap-slider">
+        <Slider {...settings}>
+          <div className="bunner">
+            <img className="bunnerImg" src={Bunner1} alt="cart" />
+            <div className="bunner-content">
+              <p className="bunner-title">Loft мебель</p>
+              <div className="bunner-descr">
+                Современная и удобная мебель в Анапе
+              </div>
+              <button>смотреть каталог</button>
             </div>
-            <button>смотреть каталог</button>
           </div>
-        </div>
-        <div>
-          <img className="bunnerImg" src={Bunner2} alt="cart" />
-        </div>
-        <div>
-          <img className="bunnerImg" src={Bunner3} alt="cart" />
-        </div>
-      </Slider>
+          <div>
+            <img className="bunnerImg" src={Bunner2} alt="cart" />
+          </div>
+          <div>
+            <img className="bunnerImg" src={Bunner3} alt="cart" />
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 }

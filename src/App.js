@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Promotion from "./components/Promotion";
+import Footer from "./components/Footer";
 import "./scss/app.scss";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
         <Slider />
         <Promotion />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

@@ -1,27 +1,22 @@
 
 .cart {
-    margin-bottom: -135px;
+    margin-bottom: -100px;
     width: 263px;
     height: 510px;
     padding: 20px;
     background-color: #fff;
     position: relative;
     transition: 0.3s ease-in;
-    z-index: 1;
-    
 
     &:hover {
-       
         box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
         transition: 0.3s ease-in;
         z-index: 100;
     }
 
     &:hover .hover-size__block{
-        
         opacity: 1;
         transition: 0.3s ease-in;
-       
     }
 
     .favorit {

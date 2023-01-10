@@ -29,6 +29,7 @@
     background-repeat: no-repeat;
     padding-left: 28px;
     margin-right: 30px;
+    color: #fff;
   }
   
   .header-contact__delivery {
@@ -60,8 +61,9 @@
     align-items: center;
 
     input {
+      flex-grow: 1;
       height: 50px;
-      width: 839px;
+      margin: 0 10px;
       border: 1px solid #E6E6E6;
     }
 
@@ -83,6 +85,10 @@
         transition: ease-in 0.1s;
       }
   
+    }
+
+    .block {
+      display: none;
     }
   
   }
@@ -139,3 +145,52 @@
     }
    
   }
+
+  @media (max-width: 960px) { 
+    .header {
+      display: none;
+    }
+
+    .header-logo__block input {
+      height: 40px;
+      margin: 0;
+      margin-left:30px;
+      border: none;
+      background-color: #F9F9F9;
+
+    }
+
+    .header-logo__block .input {
+      background-position: 12px 13px;
+    }
+
+    .header-logo__block .block {
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      flex-direction: row;
+      
+      
+      .header-contact__tel {
+        color: #414141;
+        background-image: url(../../img/phone-icon.png);
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+
+      .header-contact__delivery {
+        background-image: url(../../img/delivery-icon.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 40px;
+      }
+
+      .header-contact__delivery p {
+        color: #414141;
+
+        svg {
+          color: #000; 
+        }
+      }
+    }
+   }

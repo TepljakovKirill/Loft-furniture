@@ -7,7 +7,7 @@ function Promotion() {
     <div className="container">
       <div className="container-wrap">
         <p className="title">Хиты продаж</p>
-        <div className="promotion-block flex">
+        <div className="promotion-block">
           {dataCart.map((item) => (
             <Cart
               key={item.id}

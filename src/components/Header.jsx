@@ -82,6 +82,14 @@ function Header() {
             <img src={Logo} alt="Логотип" />
           </a>
           <input className="input" type="text" placeholder="Поиск" />
+          <div className="header-contact flex block">
+            <p className="header-contact__tel">8 (964) 89 99 119</p>
+            <div className="header-contact__delivery">
+              <a className="flex" href="#">
+                <p>Доставка</p>
+              </a>
+            </div>
+          </div>
           <div className="header-icon__block">
             <a href="#">
               <svg

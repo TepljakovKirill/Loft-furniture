@@ -1,0 +1,84 @@
+.menu-left {
+    width: 227px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #F9F9F9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    z-index: 100;
+
+    .container-menu__left {
+
+        .main-menu {
+            padding: 21px 21px 22px 26px;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: 13px;
+                font-weight: 500;
+            }
+
+            button {
+                border: none;
+                background: none;
+                cursor: pointer;
+                transition: 0.2s ease-in;
+
+               &:hover svg path{
+                    fill: #000;
+                    transition: 0.2s ease-in;
+                }
+            }
+        }
+
+        .main-menu__link {
+            padding: 16px 0px 16px 26px;
+            align-items: center;
+
+            .red {
+                color: #E92D2D;
+            }
+
+            p {
+                margin-left: 20px;
+                font-size: 13px;
+                color: #686868;
+            }
+
+           
+
+            &:hover {
+                background:  linear-gradient(90deg, #F1F1F1 0%, rgba(238, 246, 250, 0.19) 82%, rgba(237, 248, 252, 0) 107%);
+
+                p {
+                    color: #414141;
+                }
+
+                svg path {
+                    fill: #414141;
+                }
+
+                svg .mail-link {
+                    fill: none;
+                    stroke: #414141;
+                }
+
+                svg .promotion {
+                    fill: none;
+                }
+
+                svg .new {
+                    fill: #FFC107;
+                }
+
+                .red {
+                    color: #E92D2D;
+                }
+            }
+
+        }
+
+    }
+}

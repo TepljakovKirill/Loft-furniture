@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../img/logo.svg";
 import Etc from "../img/etc.png";
 
-function Header() {
+function Header({ onClickMenu }) {
   return (
     <div className="header-wrap">
       <div className="header">
@@ -325,7 +325,7 @@ function Header() {
               </a>
             </li>
           </nav>
-          <button>
+          <button onClick={onClickMenu}>
             <img src={Etc} alt="Кнопка меню" />
           </button>
         </div>

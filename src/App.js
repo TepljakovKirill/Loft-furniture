@@ -1,9 +1,11 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Slider from "./components/Slider";
-import Promotion from "./components/Promotion";
-import Footer from "./components/Footer";
 import Menu from "./components/Menu";
+import Home from "./pages/Home";
+import Contacts from "./pages/Contacts";
+import NotFound from "./pages/NotFound";
+import Footer from "./components/Footer";
 import "./scss/app.scss";
 
 function App() {
@@ -15,8 +17,11 @@ function App() {
         <Header onClickMenu={() => setMenuOpened(true)} />
       </header>
       <main>
-        <Slider />
-        <Promotion />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contacts" element={<Contacts />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
       </main>
       <footer>
         <Footer />

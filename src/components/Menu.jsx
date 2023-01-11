@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Menu({ onCloseMenu }) {
   return (
@@ -23,7 +24,7 @@ function Menu({ onCloseMenu }) {
         <div className="main-menu__block">
           <ul>
             <li>
-              <a href="#">
+              <Link to="/">
                 <div className="main-menu__link flex">
                   <svg
                     width="14"
@@ -40,7 +41,7 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>Главная</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#">
@@ -56,7 +57,7 @@ function Menu({ onCloseMenu }) {
               </a>
             </li>
             <li>
-              <a href="#">
+              <Link to="/contacts">
                 <div className="main-menu__link flex">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path
@@ -67,7 +68,7 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>Контакты</p>
                 </div>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

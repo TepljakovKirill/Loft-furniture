@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../img/logo.svg";
 import Etc from "../img/etc.png";
 
@@ -10,9 +11,9 @@ function Header({ onClickMenu }) {
           <nav>
             <ul className="header-container__nav flex">
               <li className="header-list">
-                <a className="header-link" href="#">
+                <Link className="header-link" to="/">
                   Главная
-                </a>
+                </Link>
               </li>
               <li className="header-list">
                 <a className="header-link" href="#">
@@ -20,9 +21,9 @@ function Header({ onClickMenu }) {
                 </a>
               </li>
               <li className="header-list">
-                <a className="header-link" href="#">
+                <Link to="/contacts" className="header-link">
                   Контакты
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -78,9 +79,9 @@ function Header({ onClickMenu }) {
       </div>
       <div className="container">
         <div className="header-logo__block flex">
-          <a href="#">
+          <Link to="/">
             <img src={Logo} alt="Логотип" />
-          </a>
+          </Link>
           <input className="input" type="text" placeholder="Поиск" />
           <div className="header-contact flex block">
             <p className="header-contact__tel">8 (964) 89 99 119</p>

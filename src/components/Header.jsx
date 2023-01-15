@@ -185,6 +185,37 @@ function Header({ onClickMenu }) {
                   />
                 </svg>
                 <p>Кухни</p>
+                <div className="popup-menu">
+                  <ul className="popup-list flex">
+                    <li>
+                      <a href="">Модульные кухни</a>
+                    </li>
+                    <li>
+                      <a href="">Барная зона</a>
+                    </li>
+                    <li>
+                      <a href="">Кухонные уголки</a>
+                    </li>
+                    <li>
+                      <a href="">Обеденная зона</a>
+                    </li>
+                    <li>
+                      <a href="">Столешницы</a>
+                    </li>
+                    <li>
+                      <a href="">Стеновые панели</a>
+                    </li>
+                    <li>
+                      <a href="">Мойки, сушки, смесители для кухни</a>
+                    </li>
+                    <li>
+                      <a href="">Дополнительная фурнитура</a>
+                    </li>
+                    <li>
+                      <a href="">Бытовая техника</a>
+                    </li>
+                  </ul>
+                </div>
               </a>
             </li>
             <li>
@@ -206,6 +237,37 @@ function Header({ onClickMenu }) {
                   />
                 </svg>
                 <p>Спальни</p>
+                <div className="popup-menu">
+                  <ul className="popup-list flex">
+                    <li>
+                      <a href="">Модульные кухни</a>
+                    </li>
+                    <li>
+                      <a href="">Барная зона</a>
+                    </li>
+                    <li>
+                      <a href="">Кухонные уголки</a>
+                    </li>
+                    <li>
+                      <a href="">Обеденная зона</a>
+                    </li>
+                    <li>
+                      <a href="">Столешницы</a>
+                    </li>
+                    <li>
+                      <a href="">Стеновые панели</a>
+                    </li>
+                    <li>
+                      <a href="">Мойки, сушки, смесители для кухни</a>
+                    </li>
+                    <li>
+                      <a href="">Дополнительная фурнитура</a>
+                    </li>
+                    <li>
+                      <a href="">Бытовая техника</a>
+                    </li>
+                  </ul>
+                </div>
               </a>
             </li>
             <li>

@@ -1,14 +1,24 @@
 import React from "react";
 import Cart from "./Cart";
-import { dataCart } from "../dataProduct.js";
 
 function Promotion() {
+  const [items, setItems] = React.useState([]);
+
+  React.useEffect(() => {
+    fetch("https://63c7b376075b3f3a91d11226.mockapi.io/Loft")
+      .then((res) => {
+        return res.json();
+      })
+      .then((arr) => {
+        setItems(arr);
+      });
+  }, []);
   return (
     <div className="container">
       <div className="container-wrap">
         <p className="title">Хиты продаж</p>
         <div className="promotion-block">
-          {dataCart.map((item) => (
+          {items.map((item) => (
             <Cart
               key={item.id}
               imageUrl={item.imgUrl}

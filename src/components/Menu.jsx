@@ -44,7 +44,7 @@ function Menu({ onCloseMenu }) {
               </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/about">
                 <div className="main-menu__link flex">
                   <svg width="11" height="14" viewBox="0 0 11 14" fill="none">
                     <path
@@ -54,7 +54,7 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>О нас</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/contacts">
@@ -78,7 +78,7 @@ function Menu({ onCloseMenu }) {
         <div className="main-menu__block">
           <ul>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg
                     width="14"
@@ -122,10 +122,10 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>Кухни</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg width="18" height="14" viewBox="0 0 28 23">
                     <path
@@ -139,10 +139,10 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>Спальни</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg width="20" height="14" viewBox="0 0 30 23">
                     <path
@@ -160,10 +160,10 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>Гостинные</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg width="14" height="14" viewBox="0 0 22 22">
                     <path
@@ -181,10 +181,10 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>Прихожие</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg width="14" height="14" viewBox="0 0 23 22">
                     <path
@@ -202,10 +202,10 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>Офисная мебель</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg width="14" height="14" viewBox="0 0 23 22">
                     <path
@@ -235,10 +235,10 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>Детская</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                     <path
@@ -249,10 +249,10 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p className="red">Акция</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
                     <path
@@ -266,10 +266,10 @@ function Menu({ onCloseMenu }) {
 
                   <p>Новинки</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg
                     width="20"
@@ -314,10 +314,10 @@ function Menu({ onCloseMenu }) {
 
                   <p>Матрасы</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg
                     width="14"
@@ -334,10 +334,10 @@ function Menu({ onCloseMenu }) {
 
                   <p>Мягкая мебель</p>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <div className="main-menu__link flex">
                   <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
                     <path
@@ -375,7 +375,7 @@ function Menu({ onCloseMenu }) {
                   </svg>
                   <p>Шкафы</p>
                 </div>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

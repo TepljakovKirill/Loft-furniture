@@ -16,9 +16,9 @@ function Header({ onClickMenu }) {
                 </Link>
               </li>
               <li className="header-list">
-                <a className="header-link" href="#">
+                <Link className="header-link" to="/about">
                   О нас
-                </a>
+                </Link>
               </li>
               <li className="header-list">
                 <Link to="/contacts" className="header-link">
@@ -30,7 +30,7 @@ function Header({ onClickMenu }) {
           <div className="header-contact flex">
             <p className="header-contact__tel">8 (964) 89 99 119</p>
             <div className="header-contact__delivery">
-              <a className="flex" href="#">
+              <Link className="flex" to="/доставка">
                 <svg
                   width="29"
                   height="18"
@@ -72,7 +72,7 @@ function Header({ onClickMenu }) {
                   />
                 </svg>
                 <p>Доставка</p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -86,20 +86,20 @@ function Header({ onClickMenu }) {
           <div className="header-contact flex block">
             <p className="header-contact__tel">8 (964) 89 99 119</p>
             <div className="header-contact__delivery">
-              <a className="flex" href="#">
+              <Link className="flex" to="/доставка">
                 <p>Доставка</p>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="header-icon__block">
-            <a href="#">
+            <Link to="/favorits">
               <svg width="22" height="19" viewBox="0 0 22 19" fill="none">
                 <path
                   d="M2.467 9.55034L10.9167 18L19.3663 9.55034C20.3056 8.61103 20.8333 7.33706 20.8333 6.00867C20.8333 3.24246 18.5909 1 15.8247 1C14.4963 1 13.2223 1.5277 12.283 2.46701L10.9167 3.83333L9.55034 2.46701C8.61103 1.5277 7.33706 1 6.00867 1C3.24246 1 1 3.24246 1 6.00867C1 7.33706 1.5277 8.61103 2.467 9.55034Z"
                   stroke="black"
                 />
               </svg>
-            </a>
+            </Link>
             <Link to="/basket">
               <svg width="17" height="20" viewBox="0 0 17 20" fill="none">
                 <path
@@ -108,7 +108,7 @@ function Header({ onClickMenu }) {
                 />
               </svg>
             </Link>
-            <a href="#">
+            <Link to="/profile">
               <svg
                 width="15"
                 height="20"
@@ -125,13 +125,13 @@ function Header({ onClickMenu }) {
                   stroke="black"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="header-menu flex">
           <nav className="menu flex">
             <li>
-              <a className="link-block flex" href="#">
+              <Link className="link-block flex" to="/кухни">
                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none">
                   <path
                     d="M11.5 0V12.9375H0V23H23V0H11.5ZM11.5 21.5625H1.4375V14.375H11.5V21.5625ZM21.5625 21.5625H12.9375V7.1875H21.5625V21.5625ZM21.5625 5.75H12.9375V1.4375H21.5625V5.75Z"
@@ -170,38 +170,38 @@ function Header({ onClickMenu }) {
                 <div className="popup-menu">
                   <ul className="popup-list flex">
                     <li>
-                      <a href="">Модульные кухни</a>
+                      <Link to="/кухни">Модульные кухни</Link>
                     </li>
                     <li>
-                      <a href="">Барная зона</a>
+                      <Link to="/Барная зона">Барная зона</Link>
                     </li>
                     <li>
-                      <a href="">Кухонные уголки</a>
+                      <Link to="/Кухонные уголки">Кухонные уголки</Link>
                     </li>
                     <li>
-                      <a href="">Обеденная зона</a>
+                      <Link to="/Обеденная зона">Обеденная зона</Link>
                     </li>
                     <li>
-                      <a href="">Столешницы</a>
+                      <Link to="/Столешницы">Столешницы</Link>
                     </li>
                     <li>
-                      <a href="">Стеновые панели</a>
+                      <Link to="/Стеновые панели">Стеновые панели</Link>
                     </li>
                     <li>
-                      <a href="">Мойки, сушки, смесители для кухни</a>
+                      <Link to="/мойки">Мойки, сушки, смесители для кухни</Link>
                     </li>
                     <li>
-                      <a href="">Дополнительная фурнитура</a>
+                      <Link to="/фурнитура">Дополнительная фурнитура</Link>
                     </li>
                     <li>
-                      <a href="">Бытовая техника</a>
+                      <Link to="/техника">Бытовая техника</Link>
                     </li>
                   </ul>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="link-block flex" href="#">
+              <Link className="link-block flex" to="/спальни">
                 <svg width="28" height="23" viewBox="0 0 28 23" fill="none">
                   <path
                     d="M28 12.6475C28 11.7213 27.4932 10.8869 26.6773 10.4697C25.8454 10.0442 24.7681 9.82849 23.4756 9.82849H9.42501C9.32384 9.32362 9.09967 8.8649 8.7634 8.49111L6.77086 6.2761C6.2778 5.72797 5.56927 5.39514 4.77586 5.33903L4.41793 5.31371C4.23467 5.30053 4.04846 5.3264 3.86974 5.38634V4.21542C3.86974 3.80527 3.69698 3.43487 3.42081 3.17242C3.70087 2.83675 3.86974 2.40516 3.86974 1.93484C3.86974 0.867945 3.00174 0 1.9349 0C0.868055 0 0 0.868 0 1.9349C0 2.40527 0.168875 2.8368 0.44893 3.17248C0.172758 3.43498 0 3.80532 0 4.21548V21.6712C0 21.9732 0.244836 22.2181 0.546875 22.2181H2.43441C2.71649 22.2181 2.9523 22.0036 2.97888 21.7227C3.04402 21.034 3.40818 19.1427 4.31041 18.2946H5.77478C6.07682 18.2946 6.32166 18.0497 6.32166 17.7477C6.32166 17.4457 6.07682 17.2008 5.77478 17.2008L1.0937 17.2008V12.3863L8.39316 12.3861V13.8112C8.39316 14.6544 9.07911 15.3404 9.92234 15.3404H26.4709C26.6177 15.3404 26.7655 15.3191 26.9062 15.2773V17.2008H23.8926C23.8921 17.2008 23.8917 17.2009 23.8912 17.2009H10.5867C10.2847 17.2009 10.0399 17.4457 10.0399 17.7477C10.0399 18.0497 10.2847 18.2946 10.5867 18.2946H23.6896C24.5883 19.1404 24.9548 21.0335 25.0212 21.7227C25.0478 22.0036 25.2835 22.2182 25.5656 22.2182H27.4531C27.7552 22.2182 28 21.9733 28 21.6713V12.6475ZM3.87105 7.17445C3.8792 6.94143 3.84727 6.70064 4.03927 6.5293C4.23243 6.35693 4.46414 6.41342 4.69864 6.43005C5.21533 6.46663 5.6507 6.6663 5.95766 7.0076L7.9502 9.22266C8.27318 9.58163 8.42811 10.082 8.38638 10.6315C8.37036 10.843 8.37419 11.0305 8.19591 11.1798C8.03299 11.3162 7.85619 11.2907 7.66008 11.2849C7.10927 11.2684 6.62807 11.0615 6.30509 10.7025L4.31255 8.4875C3.99027 8.12913 3.85443 7.65023 3.87105 7.17445ZM1.09375 11.2925V4.21548C1.09375 4.02484 1.24884 3.86974 1.43948 3.86974H2.43015C2.62079 3.86974 2.77588 4.02484 2.77588 4.21548V11.2924L1.09375 11.2925ZM3.86969 9.63047L5.36473 11.2925H3.86969V9.63047ZM1.93484 1.0938C2.39859 1.0938 2.77594 1.47109 2.77594 1.9349C2.77594 2.3987 2.39865 2.77599 1.93484 2.77599C1.47104 2.77599 1.09375 2.3987 1.09375 1.9349C1.09375 1.47109 1.47104 1.0938 1.93484 1.0938ZM1.95792 21.1244H1.09375V18.2947H2.92753C2.3357 19.2635 2.06806 20.4619 1.95792 21.1244ZM9.92239 14.2467C9.68237 14.2467 9.48708 14.0514 9.48708 13.8114L9.48686 10.9222H23.4756C24.5933 10.9222 25.503 11.0976 26.1793 11.4435C26.6277 11.6727 26.9062 12.1341 26.9062 12.6475V13.8093C26.9062 13.81 26.9061 13.8107 26.9061 13.8114C26.9061 14.0515 26.7108 14.2467 26.4708 14.2467L9.92239 14.2467ZM26.0421 21.1244C25.9319 20.4619 25.6643 19.2635 25.0725 18.2947H26.9062V21.1244H26.0421Z"
@@ -216,38 +216,38 @@ function Header({ onClickMenu }) {
                 <div className="popup-menu">
                   <ul className="popup-list flex">
                     <li>
-                      <a href="">Модульные кухни</a>
+                      <Link to="">Модульные кухни</Link>
                     </li>
                     <li>
-                      <a href="">Барная зона</a>
+                      <Link to="">Барная зона</Link>
                     </li>
                     <li>
-                      <a href="">Кухонные уголки</a>
+                      <Link to="">Кухонные уголки</Link>
                     </li>
                     <li>
-                      <a href="">Обеденная зона</a>
+                      <Link to="">Обеденная зона</Link>
                     </li>
                     <li>
-                      <a href="">Столешницы</a>
+                      <Link to="">Столешницы</Link>
                     </li>
                     <li>
-                      <a href="">Стеновые панели</a>
+                      <Link to="">Стеновые панели</Link>
                     </li>
                     <li>
-                      <a href="">Мойки, сушки, смесители для кухни</a>
+                      <Link to="">Мойки, сушки, смесители для кухни</Link>
                     </li>
                     <li>
-                      <a href="">Дополнительная фурнитура</a>
+                      <Link to="">Дополнительная фурнитура</Link>
                     </li>
                     <li>
-                      <a href="">Бытовая техника</a>
+                      <Link to="">Бытовая техника</Link>
                     </li>
                   </ul>
                 </div>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="link-block flex" href="#">
+              <Link className="link-block flex" to="/Гостинные">
                 <svg
                   width="30"
                   height="23"
@@ -269,10 +269,10 @@ function Header({ onClickMenu }) {
                   />
                 </svg>
                 <p>Гостинные</p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="link-block flex" href="#">
+              <Link className="link-block flex" to="/Прихожие">
                 <svg
                   width="22"
                   height="22"
@@ -294,10 +294,10 @@ function Header({ onClickMenu }) {
                   />
                 </svg>
                 <p>Прихожие</p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="link-block flex" href="#">
+              <Link className="link-block flex" to="/Офисная мебель">
                 <svg
                   width="23"
                   height="22"
@@ -319,10 +319,10 @@ function Header({ onClickMenu }) {
                   />
                 </svg>
                 <p>Офисная мебель</p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="link-block flex" href="#">
+              <Link className="link-block flex" to="/Детская">
                 <svg
                   width="23"
                   height="22"
@@ -356,12 +356,12 @@ function Header({ onClickMenu }) {
                   />
                 </svg>
                 <p>Детская</p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="link-block flex" href="#">
+              <Link className="link-block flex" to="/Акция">
                 <p className="red">Акция</p>
-              </a>
+              </Link>
             </li>
           </nav>
           <button onClick={onClickMenu}>

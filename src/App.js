@@ -4,8 +4,10 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
+import Basket from "./pages/Basket";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
+
 import "./scss/app.scss";
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contacts" element={<Contacts />}></Route>
+          <Route path="/basket" element={<Basket />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </main>

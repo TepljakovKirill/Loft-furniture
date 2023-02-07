@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -10,39 +11,39 @@ function Footer() {
               <p className="footer-title">Навигация</p>
               <ul className="footer-navigation">
                 <li>
-                  <a href="#">Кухни</a>
+                  <Link to="#">Кухни</Link>
                 </li>
                 <li>
-                  <a href="#">Спальни</a>
+                  <Link to="#">Спальни</Link>
                 </li>
                 <li>
-                  <a href="#">Гостиные</a>
+                  <Link to="#">Гостиные</Link>
                 </li>
                 <li>
-                  <a href="#">Прихожие</a>
+                  <Link to="#">Прихожие</Link>
                 </li>
                 <li>
-                  <a href="#">Офисная мебель</a>
+                  <Link to="#">Офисная мебель</Link>
                 </li>
                 <li>
-                  <a href="#">Детская</a>
+                  <Link to="#">Детская</Link>
                 </li>
                 <li>
-                  <a href="#">Шкафы</a>
+                  <Link to="#">Шкафы</Link>
                 </li>
                 <li>
-                  <a href="#">Матрасы</a>
+                  <Link to="#">Матрасы</Link>
                 </li>
                 <li>
-                  <a href="#">Мягкая мебель</a>
+                  <Link to="#">Мягкая мебель</Link>
                 </li>
               </ul>
             </div>
 
             <div className="footer-contact">
-              <a href="#" className="footer-logo">
+              <Link to="#" className="footer-logo">
                 LM
-              </a>
+              </Link>
               <p className="footer-address">
                 г. Анапа, Анапское шоссе,30 Ж/К Черное море
               </p>
@@ -50,23 +51,23 @@ function Footer() {
           </div>
           <div className="footer-nav__contact flex">
             <div className="footer-link__block flex">
-              <a className="red" href="#">
+              <Link className="red" to="#">
                 Акция
-              </a>
-              <a className="new" href="#">
+              </Link>
+              <Link className="new" to="#">
                 Новинки
-              </a>
+              </Link>
             </div>
             <div className="footer-contact__block flex">
-              <a href="#" className="tel flex">
+              <Link to="#" className="tel flex">
                 8 (964) 89 99 119
-              </a>
-              <a href="#" className="social flex">
+              </Link>
+              <Link to="#" className="social flex">
                 INSTAGRAM
-              </a>
-              <a href="#" className="mail flex">
+              </Link>
+              <Link to="#" className="mail flex">
                 mebel_loft_anapa@mail.ru
-              </a>
+              </Link>
             </div>
           </div>
         </div>

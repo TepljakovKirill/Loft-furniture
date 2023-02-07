@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Bunner1 from "../img/BunnerSlider/bunner-1.jpg";
 import Bunner2 from "../img/BunnerSlider/bunner-2.jpg";
 import Bunner3 from "../img/BunnerSlider/bunner-3.jpg";
@@ -56,7 +57,9 @@ function BunnerSlider() {
               <div className="bunner-descr">
                 Современная и удобная мебель в Анапе
               </div>
-              <button>смотреть каталог</button>
+              <Link className="button-slider flex" to="/catalog">
+                смотреть каталог
+              </Link>
             </div>
           </div>
           <div>

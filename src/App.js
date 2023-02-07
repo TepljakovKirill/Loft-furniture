@@ -5,6 +5,7 @@ import Menu from "./components/Menu";
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
 import Basket from "./pages/Basket";
+import Catalog from "./pages/Catalog";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 
@@ -21,6 +22,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />}></Route>
           <Route path="/contacts" element={<Contacts />}></Route>
           <Route path="/basket" element={<Basket />}></Route>
           <Route path="*" element={<NotFound />}></Route>

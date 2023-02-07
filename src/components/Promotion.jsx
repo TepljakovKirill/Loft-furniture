@@ -1,5 +1,6 @@
 import React from "react";
 import Cart from "./Cart";
+import Sort from "./Sort";
 
 function Promotion() {
   const [items, setItems] = React.useState([]);
@@ -17,6 +18,7 @@ function Promotion() {
     <div className="container">
       <div className="container-wrap">
         <p className="title">Хиты продаж</p>
+        <Sort />
         <div className="promotion-block">
           {items.map((item) => (
             <Cart

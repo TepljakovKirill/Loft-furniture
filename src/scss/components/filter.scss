@@ -1,0 +1,159 @@
+.filter {
+    width: 100%;
+    height: 591px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+
+    .filter-title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .filter-title:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    .sort-block {
+        padding: 20px 0;
+
+        .sort-block__furniture {
+            position: relative;
+        }
+
+        .room {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px 8px;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #686868;
+            background: #F8F8F8;
+            border-radius: 3px;
+
+            .openSortMenu {
+                transform: rotate(180deg);
+                transition: 0.1s ease-in;
+            }
+        }
+    
+        .sort-popup {
+            position: absolute;
+            left: 0;
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
+            border-radius: 3px;
+            overflow: hidden;
+            width: 100%;
+            z-index: 10;
+
+            ul {
+                overflow: hidden;
+
+                li {
+                    padding: 10px 8px;
+                    font-size: 12px;
+                    color: #686868;
+                    cursor: pointer;
+
+                    &.active,
+                    &:hover {
+                        background: #F8F8F8;
+                    }
+            
+                    &.active {
+                      font-weight: bold;
+                      color: #414141;
+                    }
+                }
+            }
+        }
+    }
+
+    .filter-color_group  {
+        padding-top: 20px;
+        max-width: 75%;
+
+        label {
+            height: 18px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .check-input {
+            appearance: none;
+        }
+
+        .check-box {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+        }
+
+        .check-input:checked + .check-box {
+            background-image: url(../../img/color-check.png);
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+
+        .red {
+            background-color: #E94848;
+        }
+
+        .green {
+            background-color: #43BF57;
+        }
+
+        .white {
+            background-color: #E4E4E4;
+        }
+
+        .black {
+            background-color: #3E3E3E;
+        }
+
+        .gray {
+            background-color: #675A5A;
+        }
+
+        .brown {
+            background-color: #864F4F;
+        }
+    }
+
+    .filter-brand__group {
+        margin-top: 20px;
+
+        .check {
+            padding-left: 27px;
+        }
+        .option {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .check-input {
+            position: absolute;
+            appearance: none;
+        }
+
+        .check-box {
+            position: absolute;
+            margin-left: -27px;
+            width: 18px;
+            height: 18px;
+           
+            border: 1px solid #245462;
+            border-radius: 3px;
+        }
+
+        .check-input:checked + .check-box {
+            background-image: url(../../img/color-check.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color:#245462;
+         }
+    }
+
+    
+}

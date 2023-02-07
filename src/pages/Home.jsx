@@ -5,10 +5,8 @@ import Promotion from "../components/Promotion";
 function Home() {
   return (
     <div className="wrapper">
-      <main>
-        <Slider />
-        <Promotion />
-      </main>
+      <Slider />
+      <Promotion />
     </div>
   );
 }

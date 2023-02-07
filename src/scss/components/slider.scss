@@ -33,13 +33,15 @@
         color: #3C3C3C;
     }
 
-    button {
+    .button-slider {
+        justify-content: center;
+        align-items: center;
         font-family: "Roboto-Condensed";
         font-size: 12px;
         letter-spacing: 0.04em;
         width: 163px;
         height: 45px;
-        border: none;
+        
         background-color: #fff;
         color: #414141;
         text-transform: uppercase;
@@ -47,7 +49,7 @@
         transition: 0.3s ease-in;
     }
 
-    button:hover {
+    .button-slider:hover {
         background-color: #414141;
         color: #fff;
         transition: 0.3s ease-in;
